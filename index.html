@@ -7,7 +7,7 @@
   <!-- Supabase CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
-    /* â”€â”€â”€ Reset & Base â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Reset & Base ─────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --beige-light: #F7F3EC;
@@ -33,7 +33,7 @@
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
 
-    /* â”€â”€â”€ Utility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Utility ──────────────────────────────────────────────────── */
     .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
     .section { padding: 100px 0; }
     .section-label {
@@ -88,7 +88,7 @@
     .lang-de a[data-lang="de"],
     .lang-en a[data-lang="en"] { display: inline-block; }
 
-    /* â”€â”€â”€ Nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Nav ──────────────────────────────────────────────────────── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -152,7 +152,7 @@
       color: var(--white);
     }
 
-    /* â”€â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Hero ─────────────────────────────────────────────────────── */
     #hero {
       min-height: 100vh;
       display: flex;
@@ -179,7 +179,7 @@
       color: var(--text-muted);
       margin-bottom: 28px;
     }
-    .hero-badge::before { content: 'â—'; color: #6BA89E; }
+    .hero-badge::before { content: '●'; color: #6BA89E; }
     .hero-title {
       font-size: clamp(2.2rem, 5vw, 3.6rem);
       font-weight: 800;
@@ -241,7 +241,7 @@
       font-size: 3rem;
     }
 
-    /* â”€â”€â”€ Features â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Features ─────────────────────────────────────────────────── */
     #features { background: var(--white); }
     .features-header { margin-bottom: 64px; }
     .features-grid {
@@ -278,7 +278,7 @@
       color: var(--text-muted);
     }
 
-    /* â”€â”€â”€ About â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── About ────────────────────────────────────────────────────── */
     #about { background: var(--beige-light); }
     .about-inner {
       display: grid;
@@ -309,7 +309,7 @@
       font-size: 0.95rem;
     }
     .about-list li::before {
-      content: 'âœ“';
+      content: '✓';
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -345,7 +345,7 @@
     .team-name { font-weight: 700; font-size: 0.9rem; }
     .team-role { font-size: 0.78rem; color: var(--text-muted); }
 
-    /* â”€â”€â”€ Appointment / Contact â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Appointment / Contact ─────────────────────────────────────── */
     #contact { background: var(--white); }
     .contact-inner {
       display: grid;
@@ -417,7 +417,7 @@
     }
     .appt-submit:hover { background: #444; }
 
-    /* â”€â”€â”€ Map â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Map ──────────────────────────────────────────────────────── */
     #map { background: var(--beige-light); padding: 80px 0; }
     .map-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; }
     .map-details h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
@@ -459,7 +459,7 @@
     }
     .map-frame a:hover { background: #444; }
 
-    /* â”€â”€â”€ Impressum â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Impressum ─────────────────────────────────────────────────── */
     #impressum { background: var(--white); padding: 80px 0; }
     .impressum-inner { max-width: 700px; }
     .impressum-inner h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 32px; }
@@ -467,7 +467,7 @@
     .impressum-block h3 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 8px; }
     .impressum-block p  { font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; }
 
-    /* â”€â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Footer ────────────────────────────────────────────────────── */
     footer {
       background: var(--text);
       color: rgba(255,255,255,0.5);
@@ -491,14 +491,14 @@
     .footer-links a:hover { color: var(--white); }
     .footer-copy { font-size: 0.8rem; }
 
-    /* â”€â”€â”€ Divider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Divider ───────────────────────────────────────────────────── */
     hr.fancy {
       border: none;
       border-top: 1px solid var(--beige);
       margin: 0;
     }
 
-    /* â”€â”€â”€ Notification â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Notification ──────────────────────────────────────────────── */
     #notify {
       position: fixed;
       bottom: 28px; right: 28px;
@@ -517,7 +517,7 @@
     }
     #notify.show { opacity: 1; transform: translateY(0); }
 
-    /* â”€â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Responsive ────────────────────────────────────────────────── */
     @media (max-width: 900px) {
       .hero-inner, .about-inner, .contact-inner, .map-inner {
         grid-template-columns: 1fr;
@@ -532,7 +532,7 @@
       .footer-inner { flex-direction: column; text-align: center; }
     }
 
-    /* â”€â”€â”€ Chatbot Widget â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Chatbot Widget ────────────────────────────────────────────── */
     #chat-widget {
       position: fixed;
       bottom: 28px;
@@ -649,14 +649,14 @@
 </head>
 <body class="lang-de">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ NAV ════════════ -->
 <nav>
   <div class="container nav-inner">
     <a href="#hero" class="nav-logo">LUMARA<span>.</span></a>
 
     <ul class="nav-links">
       <li><a href="#features"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a></li>
-      <li><a href="#about"><span data-lang="de">Ãœber uns</span><span data-lang="en">About</span></a></li>
+      <li><a href="#about"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a></li>
       <li><a href="#contact"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a></li>
       <li><a href="#impressum">Impressum</a></li>
     </ul>
@@ -674,13 +674,13 @@
   </div>
 </nav>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ HERO ════════════ -->
 <section id="hero">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
         <div class="hero-badge">
-          <span data-lang="de">Ihr Partner fÃ¼r nachhaltigen Erfolg</span>
+          <span data-lang="de">Ihr Partner für nachhaltigen Erfolg</span>
           <span data-lang="en">Your partner for lasting success</span>
         </div>
         <h1 class="hero-title" data-lang="de">
@@ -690,14 +690,14 @@
           Strategic<br><em>Consulting</em> that<br>actually works.
         </h1>
         <p class="hero-desc" data-lang="de">
-          LUMARA Solutions begleitet Unternehmen auf ihrem Wachstumspfad â€“ mit klaren Strategien, tiefem Branchen-Know-how und messbaren Ergebnissen.
+          LUMARA Solutions begleitet Unternehmen auf ihrem Wachstumspfad – mit klaren Strategien, tiefem Branchen-Know-how und messbaren Ergebnissen.
         </p>
         <p class="hero-desc" data-lang="en">
-          LUMARA Solutions guides companies on their growth path â€“ with clear strategies, deep industry expertise, and measurable results.
+          LUMARA Solutions guides companies on their growth path – with clear strategies, deep industry expertise, and measurable results.
         </p>
         <div class="hero-ctas">
           <a href="#contact" class="btn btn-primary">
-            <span data-lang="de">BeratungsgesprÃ¤ch vereinbaren</span>
+            <span data-lang="de">Beratungsgespräch vereinbaren</span>
             <span data-lang="en">Schedule a Consultation</span>
           </a>
           <a href="#features" class="btn btn-outline">
@@ -709,7 +709,7 @@
 
       <div class="hero-visual">
         <div class="hero-card">
-          <div class="hero-img-mock">ðŸ’¼</div>
+          <div class="hero-img-mock">💼</div>
           <div class="hero-stats">
             <div class="stat-box">
               <div class="stat-num">350+</div>
@@ -740,64 +740,64 @@
 
 <hr class="fancy" />
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• FEATURES â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ FEATURES ════════════ -->
 <section id="features" class="section">
   <div class="container">
     <div class="features-header">
       <p class="section-label" data-lang="de">Unsere Leistungen</p>
       <p class="section-label" data-lang="en">Our Services</p>
-      <h2 class="section-title" data-lang="de">Was wir fÃ¼r Sie tun</h2>
+      <h2 class="section-title" data-lang="de">Was wir für Sie tun</h2>
       <h2 class="section-title" data-lang="en">What we do for you</h2>
-      <p class="section-sub" data-lang="de">Von der ersten Analyse bis zur erfolgreichen Umsetzung â€“ wir begleiten Sie durch jeden Schritt des Wandels.</p>
-      <p class="section-sub" data-lang="en">From initial analysis to successful execution â€“ we guide you through every step of transformation.</p>
+      <p class="section-sub" data-lang="de">Von der ersten Analyse bis zur erfolgreichen Umsetzung – wir begleiten Sie durch jeden Schritt des Wandels.</p>
+      <p class="section-sub" data-lang="en">From initial analysis to successful execution – we guide you through every step of transformation.</p>
     </div>
     <div class="features-grid">
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ“Š</div>
+        <div class="feature-icon">📊</div>
         <h3 class="feature-title" data-lang="de">Unternehmensberatung</h3>
         <h3 class="feature-title" data-lang="en">Business Consulting</h3>
-        <p class="feature-text" data-lang="de">Individuelle Strategieentwicklung und Prozessoptimierung fÃ¼r nachhaltiges Wachstum und messbare Effizienzgewinne.</p>
+        <p class="feature-text" data-lang="de">Individuelle Strategieentwicklung und Prozessoptimierung für nachhaltiges Wachstum und messbare Effizienzgewinne.</p>
         <p class="feature-text" data-lang="en">Individual strategy development and process optimization for sustainable growth and measurable efficiency gains.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ”—</div>
+        <div class="feature-icon">🔗</div>
         <h3 class="feature-title" data-lang="de">Digitale Transformation</h3>
         <h3 class="feature-title" data-lang="en">Digital Transformation</h3>
-        <p class="feature-text" data-lang="de">Wir modernisieren Ihre digitale Infrastruktur und fÃ¼hren Ihr Team sicher durch den technologischen Wandel.</p>
+        <p class="feature-text" data-lang="de">Wir modernisieren Ihre digitale Infrastruktur und führen Ihr Team sicher durch den technologischen Wandel.</p>
         <p class="feature-text" data-lang="en">We modernize your digital infrastructure and safely guide your team through technological change.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸŽ¯</div>
+        <div class="feature-icon">🎯</div>
         <h3 class="feature-title" data-lang="de">Marketing & Positionierung</h3>
         <h3 class="feature-title" data-lang="en">Marketing & Positioning</h3>
-        <p class="feature-text" data-lang="de">Klare MarkenidentitÃ¤t, gezielte Kommunikation und Kampagnen, die Ihre Zielgruppe wirklich erreichen.</p>
+        <p class="feature-text" data-lang="de">Klare Markenidentität, gezielte Kommunikation und Kampagnen, die Ihre Zielgruppe wirklich erreichen.</p>
         <p class="feature-text" data-lang="en">Clear brand identity, targeted communication, and campaigns that genuinely reach your audience.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">âš¡</div>
+        <div class="feature-icon">⚡</div>
         <h3 class="feature-title" data-lang="de">Agiles Projektmanagement</h3>
         <h3 class="feature-title" data-lang="en">Agile Project Management</h3>
-        <p class="feature-text" data-lang="de">Flexible, ergebnisorientierte Methoden fÃ¼r Projekte, die im Zeit- und Budgetrahmen bleiben.</p>
+        <p class="feature-text" data-lang="de">Flexible, ergebnisorientierte Methoden für Projekte, die im Zeit- und Budgetrahmen bleiben.</p>
         <p class="feature-text" data-lang="en">Flexible, results-oriented methods for projects that stay on time and within budget.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸŒ</div>
+        <div class="feature-icon">🌐</div>
         <h3 class="feature-title" data-lang="de">Internationalisierung</h3>
         <h3 class="feature-title" data-lang="en">Internationalization</h3>
-        <p class="feature-text" data-lang="de">Markteintrittsstrategien und kulturelle Anpassung fÃ¼r eine erfolgreiche Expansion ins Ausland.</p>
+        <p class="feature-text" data-lang="de">Markteintrittsstrategien und kulturelle Anpassung für eine erfolgreiche Expansion ins Ausland.</p>
         <p class="feature-text" data-lang="en">Market entry strategies and cultural adaptation for a successful international expansion.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ¤</div>
+        <div class="feature-icon">🤝</div>
         <h3 class="feature-title" data-lang="de">HR & Organisationsentwicklung</h3>
         <h3 class="feature-title" data-lang="en">HR & Org Development</h3>
-        <p class="feature-text" data-lang="de">Talentgewinnung, FÃ¼hrungskrÃ¤fteentwicklung und Aufbau leistungsstarker Unternehmenskulturen.</p>
+        <p class="feature-text" data-lang="de">Talentgewinnung, Führungskräfteentwicklung und Aufbau leistungsstarker Unternehmenskulturen.</p>
         <p class="feature-text" data-lang="en">Talent acquisition, leadership development, and building high-performance company cultures.</p>
       </div>
 
@@ -807,43 +807,43 @@
 
 <hr class="fancy" />
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ ABOUT ════════════ -->
 <section id="about" class="section">
   <div class="container">
     <div class="about-inner">
-      <div class="about-img-mock">ðŸ¢</div>
+      <div class="about-img-mock">🏢</div>
       <div>
-        <p class="section-label" data-lang="de">Ãœber LUMARA</p>
+        <p class="section-label" data-lang="de">Über LUMARA</p>
         <p class="section-label" data-lang="en">About LUMARA</p>
         <h2 class="section-title" data-lang="de">Wir glauben an Beratung, die den Unterschied macht.</h2>
         <h2 class="section-title" data-lang="en">We believe in consulting that makes a difference.</h2>
-        <p class="section-sub" data-lang="de">LUMARA Solutions wurde 2010 in MÃ¼nchen gegrÃ¼ndet. Seitdem haben wir Ã¼ber 350 Unternehmen geholfen, ihre Potenziale zu entfalten â€“ von Startups bis hin zu internationalen Konzernen.</p>
-        <p class="section-sub" data-lang="en">LUMARA Solutions was founded in Munich in 2010. Since then we have helped over 350 companies unlock their potential â€“ from startups to international corporations.</p>
+        <p class="section-sub" data-lang="de">LUMARA Solutions wurde 2010 in München gegründet. Seitdem haben wir über 350 Unternehmen geholfen, ihre Potenziale zu entfalten – von Startups bis hin zu internationalen Konzernen.</p>
+        <p class="section-sub" data-lang="en">LUMARA Solutions was founded in Munich in 2010. Since then we have helped over 350 companies unlock their potential – from startups to international corporations.</p>
         <ul class="about-list">
-          <li data-lang="de">LangjÃ¤hrige Expertise in Ã¼ber 40 Branchen</li>
+          <li data-lang="de">Langjährige Expertise in über 40 Branchen</li>
           <li data-lang="en">Long-standing expertise across 40+ industries</li>
-          <li data-lang="de">Ein interdisziplinÃ¤res Team aus 30 Experten</li>
+          <li data-lang="de">Ein interdisziplinäres Team aus 30 Experten</li>
           <li data-lang="en">An interdisciplinary team of 30 experts</li>
-          <li data-lang="de">Transparenz und klare Kommunikation auf AugenhÃ¶he</li>
+          <li data-lang="de">Transparenz und klare Kommunikation auf Augenhöhe</li>
           <li data-lang="en">Transparency and clear communication at eye level</li>
-          <li data-lang="de">Nachhaltige Ergebnisse, keine kurzfristigen LÃ¶sungen</li>
+          <li data-lang="de">Nachhaltige Ergebnisse, keine kurzfristigen Lösungen</li>
           <li data-lang="en">Sustainable results, not short-term fixes</li>
         </ul>
         <div class="team-grid">
           <div class="team-card">
-            <div class="team-avatar">ðŸ‘©</div>
+            <div class="team-avatar">👩</div>
             <div class="team-name">Dr. Sofia Baumann</div>
-            <div class="team-role" data-lang="de">GrÃ¼nderin & CEO</div>
+            <div class="team-role" data-lang="de">Gründerin & CEO</div>
             <div class="team-role" data-lang="en">Founder & CEO</div>
           </div>
           <div class="team-card">
-            <div class="team-avatar">ðŸ‘¨</div>
+            <div class="team-avatar">👨</div>
             <div class="team-name">Marcus Lehr</div>
             <div class="team-role" data-lang="de">COO & Strategie</div>
             <div class="team-role" data-lang="en">COO & Strategy</div>
           </div>
           <div class="team-card">
-            <div class="team-avatar">ðŸ‘©</div>
+            <div class="team-avatar">👩</div>
             <div class="team-name">Yuki Tanaka</div>
             <div class="team-role" data-lang="de">Head of Digital</div>
             <div class="team-role" data-lang="en">Head of Digital</div>
@@ -856,7 +856,7 @@
 
 <hr class="fancy" />
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• CONTACT / APPOINTMENT â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ CONTACT / APPOINTMENT ════════════ -->
 <section id="contact" class="section">
   <div class="container">
     <div style="margin-bottom:56px;">
@@ -867,19 +867,19 @@
     </div>
     <div class="contact-inner">
       <div>
-        <p data-lang="de">Haben Sie Fragen oder mÃ¶chten Sie direkt einen Beratungstermin vereinbaren? Wir freuen uns auf Ihre Nachricht.</p>
+        <p data-lang="de">Haben Sie Fragen oder möchten Sie direkt einen Beratungstermin vereinbaren? Wir freuen uns auf Ihre Nachricht.</p>
         <p data-lang="en">Have questions or want to book a consulting session directly? We look forward to hearing from you.</p>
         <div class="contact-items">
           <div class="contact-item">
-            <div class="contact-item-icon">ðŸ“</div>
-            <div>MaximilianstraÃŸe 12, 80539 MÃ¼nchen</div>
+            <div class="contact-item-icon">📍</div>
+            <div>Maximilianstraße 12, 80539 München</div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">ðŸ“ž</div>
+            <div class="contact-item-icon">📞</div>
             <div>+49 89 123 456 78</div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">âœ‰ï¸</div>
+            <div class="contact-item-icon">✉️</div>
             <div>
               <a href="mailto:brigola.jakob@gmail.com?subject=Terminanfrage%20%7C%20LUMARA%20Solutions&body=Guten%20Tag%2C%0A%0Aich%20m%C3%B6chte%20gerne%20einen%20Beratungstermin%20vereinbaren.%0A%0AMein%20Wunschtermin%3A%20%0AThema%3A%20%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen" style="color:var(--text); text-decoration:underline; text-underline-offset:3px;">
                 brigola.jakob@gmail.com
@@ -887,9 +887,9 @@
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">ðŸ•</div>
-            <div data-lang="de">Moâ€“Fr, 9:00â€“18:00 Uhr</div>
-            <div data-lang="en">Monâ€“Fri, 9:00 AMâ€“6:00 PM</div>
+            <div class="contact-item-icon">🕐</div>
+            <div data-lang="de">Mo–Fr, 9:00–18:00 Uhr</div>
+            <div data-lang="en">Mon–Fri, 9:00 AM–6:00 PM</div>
           </div>
         </div>
         <div style="margin-top:32px;">
@@ -897,8 +897,8 @@
             href="mailto:brigola.jakob@gmail.com?subject=Terminanfrage%20%7C%20LUMARA%20Solutions&body=Guten%20Tag%2C%0A%0Aich%20m%C3%B6chte%20gerne%20einen%20Beratungstermin%20vereinbaren.%0A%0AMein%20Wunschtermin%3A%20%0AThema%3A%20%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen"
             class="btn btn-primary"
           >
-            <span data-lang="de">ðŸ“§ Termin per E-Mail anfragen</span>
-            <span data-lang="en">ðŸ“§ Request Appointment by Email</span>
+            <span data-lang="de">📧 Termin per E-Mail anfragen</span>
+            <span data-lang="en">📧 Request Appointment by Email</span>
           </a>
         </div>
       </div>
@@ -906,8 +906,8 @@
       <div class="appt-box">
         <h3 data-lang="de">Termin online buchen</h3>
         <h3 data-lang="en">Book appointment online</h3>
-        <p data-lang="de">FÃ¼llen Sie das Formular aus â€“ wir melden uns innerhalb von 24 Stunden.</p>
-        <p data-lang="en">Fill out the form â€“ we'll get back to you within 24 hours.</p>
+        <p data-lang="de">Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
+        <p data-lang="en">Fill out the form – we'll get back to you within 24 hours.</p>
         <form class="appt-form" id="appt-form" onsubmit="handleBooking(event)">
           <div class="form-row">
             <input id="f-vorname" type="text" placeholder="Vorname / First name" required />
@@ -916,7 +916,7 @@
           <input id="f-email" type="email" placeholder="E-Mail-Adresse" required />
           <input id="f-telefon" type="tel" placeholder="Telefon (optional)" />
           <select id="f-leistung" required>
-            <option value="" disabled selected>GewÃ¼nschte Leistung / Desired service</option>
+            <option value="" disabled selected>Gewünschte Leistung / Desired service</option>
             <option value="Unternehmensberatung">Unternehmensberatung / Business Consulting</option>
             <option value="Digitale Transformation">Digitale Transformation / Digital Transformation</option>
             <option value="Marketing & Positionierung">Marketing & Positionierung / Marketing & Positioning</option>
@@ -925,8 +925,8 @@
           <input id="f-datum" type="date" required />
           <textarea id="f-nachricht" placeholder="Kurze Beschreibung Ihres Anliegens / Short description of your request"></textarea>
           <button type="submit" class="appt-submit" id="appt-submit-btn">
-            <span data-lang="de">Anfrage absenden âœ“</span>
-            <span data-lang="en">Send Request âœ“</span>
+            <span data-lang="de">Anfrage absenden ✓</span>
+            <span data-lang="en">Send Request ✓</span>
           </button>
         </form>
       </div>
@@ -936,7 +936,7 @@
 
 <hr class="fancy" />
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• MAP â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ MAP ════════════ -->
 <section id="map">
   <div class="container">
     <div class="map-inner">
@@ -945,26 +945,26 @@
         <p class="section-label" data-lang="en">Location</p>
         <h3 data-lang="de">Besuchen Sie uns</h3>
         <h3 data-lang="en">Visit us</h3>
-        <p data-lang="de">Unser BÃ¼ro liegt zentral in der MÃ¼nchner Innenstadt, gut erreichbar mit Ã¶ffentlichen Verkehrsmitteln.</p>
+        <p data-lang="de">Unser Büro liegt zentral in der Münchner Innenstadt, gut erreichbar mit öffentlichen Verkehrsmitteln.</p>
         <p data-lang="en">Our office is centrally located in downtown Munich, easily accessible by public transport.</p>
         <div class="map-address">
           <strong>LUMARA Solutions GmbH</strong><br>
-          MaximilianstraÃŸe 12<br>
-          80539 MÃ¼nchen<br>
+          Maximilianstraße 12<br>
+          80539 München<br>
           Deutschland
         </div>
         <a href="https://www.google.com/maps/search/Maximilianstra%C3%9Fe+12+M%C3%BCnchen" target="_blank" rel="noopener" class="btn btn-primary">
-          <span data-lang="de">In Google Maps Ã¶ffnen â†—</span>
-          <span data-lang="en">Open in Google Maps â†—</span>
+          <span data-lang="de">In Google Maps öffnen ↗</span>
+          <span data-lang="en">Open in Google Maps ↗</span>
         </a>
       </div>
       <div class="map-frame">
-        <div style="font-size:3rem;">ðŸ—ºï¸</div>
-        <p data-lang="de" style="text-align:center;padding:0 24px;">MaximilianstraÃŸe 12, MÃ¼nchen<br><small>Klicken Sie unten fÃ¼r die vollstÃ¤ndige Karte</small></p>
-        <p data-lang="en" style="text-align:center;padding:0 24px;">MaximilianstraÃŸe 12, Munich<br><small>Click below for the full map</small></p>
+        <div style="font-size:3rem;">🗺️</div>
+        <p data-lang="de" style="text-align:center;padding:0 24px;">Maximilianstraße 12, München<br><small>Klicken Sie unten für die vollständige Karte</small></p>
+        <p data-lang="en" style="text-align:center;padding:0 24px;">Maximilianstraße 12, Munich<br><small>Click below for the full map</small></p>
         <a href="https://www.google.com/maps/search/Maximilianstra%C3%9Fe+12+M%C3%BCnchen" target="_blank" rel="noopener">
-          <span data-lang="de">Karte Ã¶ffnen â†—</span>
-          <span data-lang="en">Open Map â†—</span>
+          <span data-lang="de">Karte öffnen ↗</span>
+          <span data-lang="en">Open Map ↗</span>
         </a>
       </div>
     </div>
@@ -973,25 +973,25 @@
 
 <hr class="fancy" />
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• IMPRESSUM â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ IMPRESSUM ════════════ -->
 <section id="impressum">
   <div class="container">
     <div class="impressum-inner">
       <h2>Impressum</h2>
 
       <div class="impressum-block">
-        <h3>Angaben gemÃ¤ÃŸ Â§ 5 TMG</h3>
+        <h3>Angaben gemäß § 5 TMG</h3>
         <p>
           LUMARA Solutions GmbH<br>
-          MaximilianstraÃŸe 12<br>
-          80539 MÃ¼nchen<br>
+          Maximilianstraße 12<br>
+          80539 München<br>
           Deutschland
         </p>
       </div>
 
       <div class="impressum-block">
         <h3>Vertreten durch</h3>
-        <p>Dr. Sofia Baumann (GeschÃ¤ftsfÃ¼hrerin)</p>
+        <p>Dr. Sofia Baumann (Geschäftsführerin)</p>
       </div>
 
       <div class="impressum-block">
@@ -1005,49 +1005,49 @@
       <div class="impressum-block">
         <h3>Handelsregister</h3>
         <p>
-          Registergericht: Amtsgericht MÃ¼nchen<br>
+          Registergericht: Amtsgericht München<br>
           Registernummer: HRB 987654
         </p>
       </div>
 
       <div class="impressum-block">
         <h3>Umsatzsteuer-ID</h3>
-        <p>Umsatzsteuer-Identifikationsnummer gemÃ¤ÃŸ Â§ 27 a Umsatzsteuergesetz: DE 987 654 321</p>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE 987 654 321</p>
       </div>
 
       <div class="impressum-block">
         <h3>Haftungsausschluss</h3>
         <p>
-          Die Inhalte dieser Website wurden mit grÃ¶ÃŸtmÃ¶glicher Sorgfalt erstellt. FÃ¼r die Richtigkeit, VollstÃ¤ndigkeit und AktualitÃ¤t der Inhalte kÃ¶nnen wir jedoch keine GewÃ¤hr Ã¼bernehmen. Dies ist eine Demo-Website zu PrÃ¤sentationszwecken. Alle dargestellten Daten sind fiktiv.
+          Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Dies ist eine Demo-Website zu Präsentationszwecken. Alle dargestellten Daten sind fiktiv.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ FOOTER ════════════ -->
 <footer>
   <div class="container footer-inner">
     <div class="footer-logo">LUMARA<span>.</span></div>
     <div class="footer-links">
       <a href="#features"><span data-lang="de">Leistungen</span><span data-lang="en">Services</span></a>
-      <a href="#about"><span data-lang="de">Ãœber uns</span><span data-lang="en">About</span></a>
+      <a href="#about"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a>
       <a href="#contact"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
       <a href="#impressum">Impressum</a>
     </div>
-    <div class="footer-copy">Â© 2025 LUMARA Solutions GmbH Â· Demo</div>
+    <div class="footer-copy">© 2025 LUMARA Solutions GmbH · Demo</div>
   </div>
 </footer>
 
 <!-- Toast notification -->
 <div id="notify"></div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â• CHATBOT â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ════════════ CHATBOT ════════════ -->
 <div id="chat-widget">
   <!-- Floating Button -->
-  <button id="chat-toggle" onclick="toggleChat()" aria-label="Chat Ã¶ffnen">
-    <span id="chat-icon-open">ðŸ’¬</span>
-    <span id="chat-icon-close" style="display:none;">âœ•</span>
+  <button id="chat-toggle" onclick="toggleChat()" aria-label="Chat öffnen">
+    <span id="chat-icon-open">💬</span>
+    <span id="chat-icon-close" style="display:none;">✕</span>
   </button>
 
   <!-- Chat Window -->
@@ -1057,32 +1057,32 @@
         <div id="chat-avatar">L</div>
         <div>
           <div id="chat-name">LUMARA Assistent</div>
-          <div id="chat-status">â— Online</div>
+          <div id="chat-status">● Online</div>
         </div>
       </div>
     </div>
     <div id="chat-messages">
       <div class="chat-msg bot">
-        Hallo! ðŸ‘‹ Ich bin der LUMARA-Assistent. Ich helfe Ihnen gerne bei Fragen zu unseren Leistungen oder bei der Terminbuchung. Wie kann ich Ihnen helfen?
+        Hallo! 👋 Ich bin der LUMARA-Assistent. Ich helfe Ihnen gerne bei Fragen zu unseren Leistungen oder bei der Terminbuchung. Wie kann ich Ihnen helfen?
       </div>
     </div>
     <div id="chat-input-row">
-      <input id="chat-input" type="text" placeholder="Ihre Frageâ€¦" onkeydown="if(event.key==='Enter') sendChat()" />
-      <button id="chat-send" onclick="sendChat()">âž¤</button>
+      <input id="chat-input" type="text" placeholder="Ihre Frage…" onkeydown="if(event.key==='Enter') sendChat()" />
+      <button id="chat-send" onclick="sendChat()">➤</button>
     </div>
   </div>
 </div>
 
 <script>
-  /* â”€â”€â”€ Supabase Konfiguration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-     âš ï¸  DEINE WERTE HIER EINTRAGEN (Settings â†’ API im Supabase Dashboard)
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─── Supabase Konfiguration ──────────────────────────────────────
+     ⚠️  DEINE WERTE HIER EINTRAGEN (Settings → API im Supabase Dashboard)
+  ─────────────────────────────────────────────────────────────────── */
   const SUPABASE_URL  = 'https://kbhtxfsvhjvyqrllzgya.supabase.co';
   const SUPABASE_KEY  = 'sb_publishable_bOR9qfkucPuxH0fq9hkyFA_tkxz5FXc';
 
   const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-  /* â”€â”€â”€ Language Switcher â”€â”€â”€ */
+  /* ─── Language Switcher ─── */
   function setLang(lang) {
     document.body.className = 'lang-' + lang;
     document.getElementById('btn-de').classList.toggle('active', lang === 'de');
@@ -1090,14 +1090,14 @@
     document.documentElement.lang = lang;
   }
 
-  /* â”€â”€â”€ Appointment Form â†’ Supabase â”€â”€â”€ */
+  /* ─── Appointment Form → Supabase ─── */
   async function handleBooking(e) {
     e.preventDefault();
     const isDE = document.body.classList.contains('lang-de');
     const btn  = document.getElementById('appt-submit-btn');
 
     btn.disabled = true;
-    btn.textContent = isDE ? 'Wird gesendetâ€¦' : 'Sendingâ€¦';
+    btn.textContent = isDE ? 'Wird gesendet…' : 'Sending…';
 
     const { error } = await _supabase.from('anfragen').insert({
       vorname:     document.getElementById('f-vorname').value,
@@ -1111,23 +1111,23 @@
 
     btn.disabled = false;
     btn.innerHTML = isDE
-      ? '<span data-lang="de">Anfrage absenden âœ“</span><span data-lang="en">Send Request âœ“</span>'
-      : '<span data-lang="de">Anfrage absenden âœ“</span><span data-lang="en">Send Request âœ“</span>';
+      ? '<span data-lang="de">Anfrage absenden ✓</span><span data-lang="en">Send Request ✓</span>'
+      : '<span data-lang="de">Anfrage absenden ✓</span><span data-lang="en">Send Request ✓</span>';
 
     if (error) {
       console.error('Supabase Fehler:', error);
       showNotify(isDE
-        ? 'âŒ Fehler beim Senden. Bitte versuchen Sie es erneut.'
-        : 'âŒ Submission failed. Please try again.');
+        ? '❌ Fehler beim Senden. Bitte versuchen Sie es erneut.'
+        : '❌ Submission failed. Please try again.');
     } else {
       document.getElementById('appt-form').reset();
       showNotify(isDE
-        ? 'âœ“ Anfrage eingegangen â€“ wir melden uns bald!'
-        : 'âœ“ Request received â€“ we\'ll be in touch soon!');
+        ? '✓ Anfrage eingegangen – wir melden uns bald!'
+        : '✓ Request received – we\'ll be in touch soon!');
     }
   }
 
-  /* â”€â”€â”€ Toast â”€â”€â”€ */
+  /* ─── Toast ─── */
   function showNotify(msg) {
     const el = document.getElementById('notify');
     el.textContent = msg;
@@ -1135,7 +1135,7 @@
     setTimeout(() => el.classList.remove('show'), 4000);
   }
 
-  /* â”€â”€â”€ Chatbot (sicher â€“ kein API Key im Frontend) â”€â”€â”€ */
+  /* ─── Chatbot (sicher – kein API Key im Frontend) ─── */
   const CHAT_ENDPOINT = 'https://kbhtxfsvhjvyqrllzgya.supabase.co/functions/v1/chat-proxy';
 
   let chatHistory = [];
@@ -1167,7 +1167,7 @@
     input.value = '';
     addMsg(text, 'user');
 
-    const typing = addMsg('â€¦', 'bot typing');
+    const typing = addMsg('…', 'bot typing');
 
     try {
       const res = await fetch(CHAT_ENDPOINT, {
@@ -1183,17 +1183,17 @@
       });
       const data = await res.json();
 
-      // Immer eine klare BegrÃ¼ndung anzeigen â€“ egal welcher Statuscode
+      // Immer eine klare Begründung anzeigen – egal welcher Statuscode
       const errorMessages = {
-        429: 'â±ï¸ Sie haben zu viele Anfragen gesendet. Bitte warten Sie eine Minute und versuchen Sie es erneut.',
-        400: 'âš ï¸ Ihre Nachricht konnte nicht verarbeitet werden. Bitte Ã¼berprÃ¼fen Sie Ihre Eingabe.',
-        500: 'ðŸ”§ Serverfehler â€“ unser System hat ein technisches Problem. Bitte versuchen Sie es in KÃ¼rze erneut.',
-        504: 'â³ Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.',
+        429: '⏱️ Sie haben zu viele Anfragen gesendet. Bitte warten Sie eine Minute und versuchen Sie es erneut.',
+        400: '⚠️ Ihre Nachricht konnte nicht verarbeitet werden. Bitte überprüfen Sie Ihre Eingabe.',
+        500: '🔧 Serverfehler – unser System hat ein technisches Problem. Bitte versuchen Sie es in Kürze erneut.',
+        504: '⏳ Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.',
       };
 
       const reply = data.reply
         ?? errorMessages[res.status]
-        ?? `âŒ Unbekannter Fehler (Code ${res.status}). Bitte versuchen Sie es erneut.`;
+        ?? `❌ Unbekannter Fehler (Code ${res.status}). Bitte versuchen Sie es erneut.`;
 
       // History nur bei erfolgreicher Antwort erweitern
       if (res.ok) {
@@ -1205,14 +1205,14 @@
     } catch (err) {
       const isOffline = !navigator.onLine;
       typing.textContent = isOffline
-        ? 'ðŸ“µ Keine Internetverbindung. Bitte prÃ¼fen Sie Ihre Verbindung und versuchen Sie es erneut.'
-        : 'âŒ Verbindung zum Server fehlgeschlagen. Bitte versuchen Sie es in KÃ¼rze erneut.';
+        ? '📵 Keine Internetverbindung. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.'
+        : '❌ Verbindung zum Server fehlgeschlagen. Bitte versuchen Sie es in Kürze erneut.';
       typing.classList.remove('typing');
     }
     document.getElementById('chat-messages').scrollTop = 9999;
   }
 
-  /* â”€â”€â”€ Smooth scroll offset for fixed nav â”€â”€â”€ */
+  /* ─── Smooth scroll offset for fixed nav ─── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
